@@ -1,7 +1,7 @@
 const Sib = require('sib-api-v3-sdk');
 const client = Sib.ApiClient.instance;
 const apiKey = client.authentications['api-key'];
-apiKey.apiKey = "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";
+apiKey.apiKey = process.env.MAILER || "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";
 
 const sendMail = (email, name, flight) => {
 
