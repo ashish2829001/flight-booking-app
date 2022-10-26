@@ -9,7 +9,7 @@ const flightBookingApis = require("./routers/flightBookingApis");
 const app = express();
 const port = process.env.PORT || 5000;
 
-app.use(express.static(path.join(__dirname, 'flight-booking-app', 'build')));
+app.use(express.static(path.join(__dirname, 'build')));
 // app.use(express.static("public"))
 
 
@@ -35,7 +35,7 @@ app.use('/api/flight', flightRouter);
 app.use('/api/bookflight', flightBookingApis);
 
 
-app.use('/*',express.static(path.join(__dirname, 'flight-booking-app', 'build')))
+app.use('/*',express.static(path.join(__dirname, 'build')))
 
 app.listen(port, () => {
   console.log(`App listening on port ${port}`)
