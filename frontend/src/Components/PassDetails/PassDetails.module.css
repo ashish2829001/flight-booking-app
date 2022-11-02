@@ -1,0 +1,39 @@
+.cont{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f6f6;
+}
+.close {
+    cursor: pointer;
+    background-color: rgb(128, 15, 15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(175, 172, 172);
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+.mainCont{
+    width: 50%;
+    margin: 30px;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 4%) 0px 8px 16px;
+    border: 1px solid rgb(230, 230, 230);
+    padding: 10px;
+    padding-bottom: 30px;
+}
+.ele{
+    margin: 20px 50px;
+}
+.label {
+    padding: 0 5px;
+}
